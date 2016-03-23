@@ -96,6 +96,7 @@ Backup all essential files and settings
   - Everything must be the same as the backup config, except for **Kernel and Kext Patches**
   - Only get **ssdTrimEnabler** from **Kernel and Kext Patches**
   - Don't forget to install the theme if using a custom one
+
 ### <a name="more"></a>More
 
 - Prevent Backup and Windows disks from mounting
