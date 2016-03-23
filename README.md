@@ -36,7 +36,7 @@ This is a guide for myself, but if you have the same build or if you know what y
   - [Clover Configurator](http://mackie100projects.altervista.org/download/)
   - [audio_CloverALC](https://github.com/toleda/audio_cloverALC)
   - [Multibeast 8.x](http://www.tonymacx86.com/downloads.php?do=cat&id=3)
-  - [Multibeast 5.4.3](http://www.tonymacx86.com/downloads.php?do=cat&id=6) I haven't tested, but [Multibeast 5.5.5](http://www.tonymacx86.com/downloads.php?do=cat&id=3) should also do the job
+  - [Multibeast 5.4.3](http://www.tonymacx86.com/downloads.php?do=cat&id=6) (I haven't tested, but [Multibeast 5.5.5](http://www.tonymacx86.com/downloads.php?do=cat&id=3) should also do the job)
 
 ### <a name="backup"></a>Backup
 
@@ -90,11 +90,12 @@ Backup all essential files and settings
   - Run audio_cloverALC-110.command
   - Select y for everything
 
-5. Check if Clover config is the same as the backup
+5. Check if the sound input and output are working
+
+6. Check if Clover config is the same as the backup
   - Everything must be the same as the backup config, except for **Kernel and Kext Patches**
   - Only get **ssdTrimEnabler** from **Kernel and Kext Patches**
   - Don't forget to install the theme if using a custom one
-
 ### <a name="more"></a>More
 
 - Prevent Backup and Windows disks from mounting
@@ -105,4 +106,16 @@ Backup all essential files and settings
     - Add lines for the disks `UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX  none hfs rw,noauto 0 0` or `UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX  none ntfs rw,noauto 0 0` for ntfs drives
     - Press CTRL + X and save
 
+- Restore backed up files
+
 - If everything is ok after a couple restarts, backup installation using [SuperDuper!](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)
+
+- Install essential Apps
+  - [Chrome](https://www.google.com/chrome/browser/desktop/)
+  - [Dropbox](https://www.dropbox.com/install)
+  - [1password](https://agilebits.com/onepassword/mac)
+  - [Skype](http://www.skype.com/en/download-skype/skype-for-mac/)
+  - [Sync](https://www.sync.com/install/)
+  - [Brackets](http://brackets.io/)
+  - [SourceTree](https://www.sourcetreeapp.com/)
+  - [ImageOptim](https://imageoptim.com/)
