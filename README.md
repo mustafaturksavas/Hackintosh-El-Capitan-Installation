@@ -1,5 +1,7 @@
 # Hackintosh El Capitan Installation
 
+This is a guide for myself, but if you have the same build or if you know what you are doing, this guide might also be helpful to you.
+
 ## My Build
 - GA-Z77-DS3H
 - i7 2600K
@@ -12,6 +14,7 @@
 - [Change BIOS Settings](#bios)
 - [Install El Capitan](#install)
 - [Install Bootloader & Drivers](#bootloader)
+- [More](#more)
 
 ### <a name="disk"></a>Create Installation Disk
 
@@ -33,7 +36,7 @@
   - [Clover Configurator](http://mackie100projects.altervista.org/download/)
   - [audio_CloverALC](https://github.com/toleda/audio_cloverALC)
   - [Multibeast 8.x](http://www.tonymacx86.com/downloads.php?do=cat&id=3)
-  - Multibeast 5.4.3
+  - [Multibeast 5.4.3](http://www.tonymacx86.com/downloads.php?do=cat&id=6) I haven't tested, but [Multibeast 5.5.5](http://www.tonymacx86.com/downloads.php?do=cat&id=3) should also do the job
 
 ### <a name="backup"></a>Backup
 
@@ -42,6 +45,7 @@ Backup all essential files and settings
 - Users/user/.ssh
 - Users/user/Library/Application Support/Karabiner
 - Users/user/Library/Group Containers/UBF8T346G9.Office
+- Library/Desktop Pictures
 
 - Users/user/Desktop
 - Users/user/Downloads
@@ -50,7 +54,7 @@ Backup all essential files and settings
 
 ### <a name="bios"></a>Change BIOS Settings
 
-- Set SATA Mode to ACHI from **Peripherals**
+- Set SATA Mode to AHCI from **Peripherals**
 
 ### <a name="install"></a>Install El Capitan
 
@@ -90,3 +94,15 @@ Backup all essential files and settings
   - Everything must be the same as the backup config, except for **Kernel and Kext Patches**
   - Only get **ssdTrimEnabler** from **Kernel and Kext Patches**
   - Don't forget to install the theme if using a custom one
+
+### <a name="more"></a>More
+
+- Prevent Backup and Windows disks from mounting
+  - Open Terminal
+    - List disks using `diskutil list`
+    - Get UUID of the disks to be prevented from mounting with `diskutil info diskxsx`
+    - Create fstab to list the disks `sudo pico /etc/fstab`
+    - Add lines for the disks `UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX  none hfs rw,noauto 0 0` or `UUID=XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX  none ntfs rw,noauto 0 0` for ntfs drives
+    - Press CTRL + X and save
+
+- If everything is ok after a couple restarts, backup installation using [SuperDuper!](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)
