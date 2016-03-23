@@ -36,7 +36,7 @@ This is a guide for myself, but if you have the same build or if you know what y
   - [Clover Configurator](http://mackie100projects.altervista.org/download/)
   - [audio_CloverALC](https://github.com/toleda/audio_cloverALC)
   - [Multibeast 8.x](http://www.tonymacx86.com/downloads.php?do=cat&id=3)
-  - [Multibeast 5.4.3](http://www.tonymacx86.com/downloads.php?do=cat&id=6) (I haven't tested, but [Multibeast 5.5.5](http://www.tonymacx86.com/downloads.php?do=cat&id=3) should also do the job)
+  - [Multibeast 5.4.3](http://www.tonymacx86.com/downloads.php?do=cat&id=6)
 
 ### <a name="backup"></a>Backup
 
