@@ -15,6 +15,8 @@ This is a guide for myself, but if you have the same build or if you know what y
 - [Install El Capitan](#install)
 - [Install Bootloader & Drivers](#bootloader)
 - [More](#more)
+- [Notes](#notes)
+
 
 ### <a name="disk"></a>Create Installation Disk
 
@@ -120,3 +122,7 @@ Backup all essential files and settings
   - [Brackets](http://brackets.io/)
   - [SourceTree](https://www.sourcetreeapp.com/)
   - [ImageOptim](https://imageoptim.com/)
+  
+### <a name="notes"></a>Notes
+
+- XtraFinder's "System Integrity Protection is enabled" doesn't have a solution. Do not change **CsrActiveConfig** to **0x14**, because after a while it gives "Missing Bluetooth Controller Transport" error and you can't fix it unless you change it back from clover settings.
