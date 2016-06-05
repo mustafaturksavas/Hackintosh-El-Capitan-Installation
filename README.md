@@ -126,3 +126,5 @@ Backup all essential files and settings
 ### <a name="notes"></a>Notes
 
 - XtraFinder's "System Integrity Protection is enabled" doesn't have a solution. Do not change **CsrActiveConfig** to **0x14**, because after a while it gives "Missing Bluetooth Controller Transport" error and you can't fix it unless you change it back from clover settings (It happened after many restarts). _Setting **CsrActiveConfig** to **0x7** seems to work for now._
+
+- If audio doesn't work after sleep, install [CodecCommander](https://bitbucket.org/RehabMan/os-x-eapd-codec-commander/downloads) using Kext Wizard
